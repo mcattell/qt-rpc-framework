@@ -1,0 +1,12 @@
+#ifndef RPCCLIENT_GLOBAL_H
+#define RPCCLIENT_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(RPCCLIENT_LIBRARY)
+#  define RPCCLIENTSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define RPCCLIENTSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // RPCCLIENT_GLOBAL_H

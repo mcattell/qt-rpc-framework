@@ -1,0 +1,12 @@
+#include <QtCore/QCoreApplication>
+#include "rewriter.h"
+#ADDITIONAL_HEADERS
+
+int main(int argc, char** argv) {
+
+    QCoreApplication app(argc,argv);
+    CANDIDATE_CLASS_NAME candidate;
+
+    Rewriter rewriter(&candidate);
+    return 0;
+}

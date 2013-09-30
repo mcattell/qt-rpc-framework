@@ -1,0 +1,30 @@
+QT       += core network
+QT       -= gui
+
+TARGET = loader
+TEMPLATE = app
+CONFIG   += console
+CONFIG   -= app_bundle
+
+
+INCLUDEPATH +=\
+            $$[QT_INSTALL_HEADERS] \
+            #END_INCLUDEPATH_MARKER
+
+LIBS += #END_LIBS_MARKER
+
+DEPENDPATH += $$INCLUDEPATH #END_DEPENDPATH_MARKER
+
+SOURCES += \
+            main.cpp \
+            rewriter.cpp \
+            RPC_QOBJECT_CANDIDATE_SOURCE
+
+
+HEADERS += \
+            rewriter.h \
+            RPC_QOBJECT_CANDIDATE_HEADER
+
+target.path = .
+INSTALLS += target
+

@@ -1,0 +1,12 @@
+#ifndef RPCSERVER_GLOBAL_H
+#define RPCSERVER_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(RPCSERVER_LIBRARY)
+#  define RPCSERVERSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define RPCSERVERSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // RPCSERVER_GLOBAL_H

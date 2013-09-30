@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sources/loader.dat</file>
+        <file>sources/main.dat</file>
+        <file>sources/rewriter.cpp</file>
+        <file>sources/rewriter.h</file>
+    </qresource>
+</RCC>
