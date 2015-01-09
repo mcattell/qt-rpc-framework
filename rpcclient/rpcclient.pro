@@ -12,7 +12,7 @@ INCLUDEPATH +=\
             $$[QT_INSTALL_HEADERS] \
             $$PWD/../shared
 
-DEPENDPATH += $$INCLUDEPATH
+DEPENDPATH += $$PWD/../shared
 
 SOURCES += \
         rpcclient.cpp \
@@ -49,7 +49,7 @@ HEADERS += \
         client_rpc_protocol.h \
         callinterface.h
 
-
+include(../shared/shared.pri)
 target.path = $$[QT_INSTALL_LIBS]
 INSTALLS += target others
 

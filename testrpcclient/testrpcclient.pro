@@ -13,7 +13,8 @@ INCLUDEPATH += \
 DEPENDPATH += $$INCLUDEPATH
 TEMPLATE = app
 LIBS +=\
-    -L$$[QT_INSTALL_LIBS] -lrpcclient
+-L/home/matthew/dev/build-qtrpcframework-Desktop_Qt_5_4_0_GCC_64bit-Debug/rpcclient -lrpcclient
+ #   -L$$[QT_INSTALL_LIBS] -lrpcclient
 
 SOURCES += \
             main.cpp \

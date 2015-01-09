@@ -41,6 +41,7 @@ HEADERS += \
         server_invokation.h \
         server_rpc_protocol.h
 
+include(../shared/shared.pri)
 
 target.path = $$[QT_INSTALL_LIBS]
 INSTALLS += target
