@@ -8,25 +8,26 @@ CONFIG   -= app_bundle
 
 TEMPLATE = app
 INCLUDEPATH +=\
+    $$PWD \
     $$[QT_INSTALL_HEADERS] \
         ../rpcserver \
+        ../rpcclient \
         ../shared \
         ../testrpcclient
 
 
 DEPENDPATH += \
+            $$PWD \
             ../shared \
             ../testrpcclient
 
 LIBS += -L$$[QT_INSTALL_LIBS] -lrpcserver
 
 SOURCES += \
-           main.cpp \
-           roctestclass.cpp \
-           clienttestclass.cpp
+           main.cpp
+
 
 HEADERS += \
-           roctestclass.h \
-           clienttestclass.h
+           roctestclass.h
 
-
+include(../testrpcclient/testrpcclient.pri)
