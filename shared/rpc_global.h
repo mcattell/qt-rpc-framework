@@ -1,6 +1,6 @@
 #ifndef RPC_GLOBAL_H
 #define RPC_GLOBAL_H
-#include <QtCore/QMetaType>
+#include <QMetaType>
 
 namespace Rpc {
 

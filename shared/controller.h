@@ -52,5 +52,5 @@ private:
     ControllerState m_state;
     MetaService* m_metaService;
 };
-Q_DECLARE_METATYPE(Controller::ControllerState)
+
 #endif // CONTROLLER_H
