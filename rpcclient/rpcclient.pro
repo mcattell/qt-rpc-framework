@@ -5,14 +5,11 @@ TARGET = rpcclient
 TEMPLATE = lib
 CONFIG   += console
 
+INCLUDEPATH += "../shared"
+
 DEFINES += RPCCLIENT_LIBRARY
 #DEFINES += DEBUG_RPCCLIENT
 
-INCLUDEPATH +=\
-            $$[QT_INSTALL_HEADERS] \
-            $$PWD/../shared
-
-DEPENDPATH += $$PWD/../shared
 
 SOURCES += \
         rpcclient.cpp \
@@ -29,28 +26,21 @@ SOURCES += \
         callinterface.cpp
 
 HEADERS += \
-	packet.h \
-        link.h \
-        packet.h \
 	rpcclient.h \
         rpcclient_global.h \
         rpcclient_p.h \
-        controller.h \
-        rpc_global.h \
-        handler.h \
         client_handler.h \
-        metaservice.h \
         client_packetfactory.h \
         client_controller.h \
         client_link.h \
         client_metaservice.h \
-        invokation.h \
         client_invokation.h \
         client_rpc_protocol.h \
         callinterface.h
 
 include(../shared/shared.pri)
+
 target.path = $$[QT_INSTALL_LIBS]
-INSTALLS += target others
+INSTALLS += target
 
 

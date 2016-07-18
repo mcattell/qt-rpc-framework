@@ -1,13 +1,14 @@
-QT += core
+QT += core network
 QT -= gui
+
 TARGET = rpcserver
 TEMPLATE = lib
+CONFIG += console
 
-
-INCLUDEPATH +=\
+HEADERS +=\
             $$[QT_INSTALL_HEADERS] \
-            $$PWD/../rpcclient \
-            $$PWD/../shared
+            ../rpcclient \
+            ../shared
 
 
 DEFINES += RPCSERVER_LIBRARY

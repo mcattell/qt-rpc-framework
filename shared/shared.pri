@@ -13,4 +13,5 @@ HEADERS += ../shared/controller.h \
            ../shared/link.h \
            ../shared/metaservice.h \
            ../shared/packet.h \
-           ../shared/handler.h
+           ../shared/handler.h \
+           ../shared/invokation.h
