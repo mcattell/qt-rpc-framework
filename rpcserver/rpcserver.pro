@@ -5,10 +5,10 @@ TARGET = rpcserver
 TEMPLATE = lib
 CONFIG += console
 
-HEADERS +=\
+INCLUDEPATH +=\
             $$[QT_INSTALL_HEADERS] \
-            ../rpcclient \
-            ../shared
+            "../rpcclient" \
+            "../shared"
 
 
 DEFINES += RPCSERVER_LIBRARY
