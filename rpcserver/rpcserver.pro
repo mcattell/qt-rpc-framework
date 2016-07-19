@@ -14,6 +14,8 @@ INCLUDEPATH +=\
 DEFINES += RPCSERVER_LIBRARY
 #DEFINES += DEBUG_RPC_SERVER
 
+
+
 SOURCES += \
         rpcserver.cpp \
         daemon.cpp \
@@ -44,6 +46,10 @@ HEADERS += \
 
 include(../shared/shared.pri)
 
+header_files.files = $$HEADERS \
+                    "../shared/rpc_global.h"
+header_files.path = $$[QT_INSTALL_HEADERS]/QtRpcFramework
+
 target.path = $$[QT_INSTALL_LIBS]
-INSTALLS += target
+INSTALLS += target header_files
 

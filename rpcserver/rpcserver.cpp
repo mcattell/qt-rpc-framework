@@ -59,6 +59,7 @@ bool RpcServerPrivate::register_receiver(QObject * obj, qint16 port) {
 
         connect(this, SIGNAL(notifyStatusChange(Rpc::Status, QObject*)), q_ptr, SIGNAL(serverStatusChanged(Rpc::Status,QObject*)));
         m_servicesMap.insert(id,service);
+        qDebug() << id.toString();
         return static_cast<ServerMetaService*>(m_servicesMap.value(id))->thread()->isRunning();
     }
     return false;

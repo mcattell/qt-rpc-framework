@@ -43,7 +43,7 @@ void ServerSignalForwardRequestHandler::handle(Packet& packet) {
 void ServerSignalForwardRequestHandler::dequeueSignal() {
 
     if (!m_signalQueue.isEmpty()) {
-        qDebug() << "queue size: " <<  m_signalQueue.size();
+
         SignalCall item(m_signalQueue.head());
         if (item.call())
             m_signalQueue.dequeue();

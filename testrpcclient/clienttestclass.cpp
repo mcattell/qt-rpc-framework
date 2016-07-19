@@ -5,9 +5,9 @@
 ClientTestClass::ClientTestClass(QObject *parent) :
     QObject(parent)
 {
-   // m_testTimer = new QTimer(this);
-   // connect(m_testTimer,SIGNAL(timeout()),this,SLOT(timerExpired()));
-   // m_testTimer->start(5);
+    m_testTimer = new QTimer(this);
+    connect(m_testTimer,SIGNAL(timeout()),this,SLOT(timerExpired()));
+    m_testTimer->start(5);
 
 }
 void ClientTestClass::testSlot1(int param) {
